@@ -31,4 +31,5 @@ To open the prepared data file, BodyMotionData.txt, one can do the following:
 2. Then use the following code to open it in R (https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/):
 
 >the_table <- read.table(path, header = TRUE)
+
 >View(the_table)
