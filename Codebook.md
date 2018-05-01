@@ -1,5 +1,5 @@
 # Code Book for Averaged Accelerometer and Gyroscope Data from Samsung Galaxy S II Phone
-## UCI Human Activity Recognition Dataset
+### UCI Human Activity Recognition Dataset
 
 
 ## Data preparation remarks
@@ -24,106 +24,186 @@ The steps are carried out in the included script in this repository, run_analysi
 ### The values in this codebook are *all* **average values**.  The individual values are not labeled as 'average' because this distinction is not needed to differentiate the values.
 
 ### The variable name contains either 'Acc' or 'Gyro'
-When the variable name contains 'Acc', this refers to accelerometer data, whose values are in units of $$g = 9.8 m/s^2$$, normalized to [-1,1]. Descriptions of the accelerometer data will only state 'Acc' to refer to accelerometer data.
+When the variable name contains 'Acc', this refers to accelerometer data, whose values are in units of *g* = 9.8 m/s^2, normalized to [-1,1]. Descriptions of the accelerometer data will only state 'Acc' to refer to accelerometer data.
 
 When the variable name contains 'Gyro', this refers to gyroscope data, whose values are in units of rads/s, normalized to [-1,1]. Descriptions of the gyroscope data will only state 'Gyro' to refer to gyroscope data.
 
 
-### The variable name begins either wtin 't' or 'f'
+### The variable name begins either with't' or 'f'
 When the variable begins with 't', the data is in the time domain and will be referred to as 't-domain' in the descriptions.
 
 When the variable begins with 'f', the data is in the frequency domain and will be referred to as 'f-domain' in the descriptions.
 
 
-###Some variables contain the term 'Jerk'
+### Some variables contain the term 'Jerk'
 This jerk signal is from the body component of either accelerometer data or the gyroscope data.  Since this signal is understood as a body signal, the description will not include 'body' for the variables containing 'Jerk' 
 
 
-###Some variables contain the term 'Mag'
+### Some variables contain the term 'Mag'
 'Mag' refers to magnitude. It does not contain directional information. The description will refer to magnitude as 'Mag' for the variables containing 'Mag' 
 
 
 
-##Variable List and Description
+## Variable List and Description
 
 participant_index: Number representing the participant, an integer from 1 to 30
-action: Action in progress during measurement, one of 6 values: LAYING,SITTING,STANDING,WALKING,WALKING_DOWNSTAIRS, OR WALKING_UPSTAIRS 
+
+action: Action in progress during measurement, one of 6 values: LAYING,SITTING,STANDING,WALKING,WALKING_DOWNSTAIRS, OR WALKING_UPSTAIRS
+
 tBodyAcc_mean_X: Mean of t-domain Acc data for body signal in X direction
+
 tBodyAcc_mean_Y: Mean of t-domain Acc data for body signal in Y direction
+
 tBodyAcc_mean_Z: Mean of t-domain Acc data for body signal in Z direction
+
 tBodyAcc_std_X: Standard deviation of t-domain Acc data for body signal in X direction
+
 tBodyAcc_std_Y: Standard deviation of t-domain Acc data for body signal in Y direction
+
 tBodyAcc_std_Z: Standard deviation of t-domain Acc data for body signal in Z direction
+
 tGravityAcc_mean_X: Mean of t-domain Acc data for gravity signal in X direction
+
 tGravityAcc_mean_Y: Mean of t-domain Acc data for gravity signal in Y direction
 tGravityAcc_mean_Z: Mean of t-domain Acc data for gravity signal in Z direction
+
 tGravityAcc_std_X: Standard deviation of t-domain Acc data for gravity signal in X direction
+
 tGravityAcc_std_Y: Standard deviation of t-domain Acc data for gravity signal in Y direction
+
 tGravityAcc_std_Z: Standard deviation of t-domain Acc data for gravity signal in Z direction
+
 tBodyAccJerk_mean_X: Mean of t-domain Acc data for jerk signal in X direction
+
 tBodyAccJerk_mean_Y: Mean of t-domain Acc data for jerk signal in Y direction
+
 tBodyAccJerk_mean_Z: Mean of t-domain Acc data for jerk signal in Z direction
+
 tBodyAccJerk_std_X: Standard deviation of t-domain Acc data for jerk signal in X direction
+
 tBodyAccJerk_std_Y: Standard deviation of t-domain Acc data for jerk signal in Y direction
+
 tBodyAccJerk_std_Z: Standard deviation of t-domain Acc data for jerk signal in Z direction
+
 tBodyGyro_mean_X: Mean of t-domain Gyro data for body signal in X direction
+
 tBodyGyro_mean_Y: Mean of t-domain Gyro data for body signal in Y direction
+
 tBodyGyro_mean_Z: Mean of t-domain Gyro data for body signal in Z direction
+
 tBodyGyro_std_X: Standard deviation of t-domain Gyro data for body signal in X direction
+
 tBodyGyro_std_Y: Standard deviation of t-domain Gyro data for body signal in Y direction
+
 tBodyGyro_std_Z: Standard deviation of t-domain Gyro data for body signal in Z direction
+
 tBodyGyroJerk_mean_X: Mean of t-domain Gyro data for jerk signal in X direction
+
 tBodyGyroJerk_mean_Y: Mean of t-domain Gyro data for jerk signal in Y direction
+
 tBodyGyroJerk_mean_Z: Mean of t-domain Gyro data for jerk signal in Z direction
+
 tBodyGyroJerk_std_X: Standard deviation of t-domain Gyro data for jerk signal in X direction
+
 tBodyGyroJerk_std_Y: Standard deviation of t-domain Gyro data for jerk signal in Y direction
+
 tBodyGyroJerk_std_Z: Standard deviation of t-domain Gyro data for jerk signal in Z direction
+
 tBodyAccMag_mean: Mean of t-domain Acc data for body signal Mag
+
 tBodyAccMag_std: Standard deviation of t-domain Acc data for body signal Mag
+
 tGravityAccMag_mean: Mean of t-domain Acc data for gravity signal Mag
+
 tGravityAccMag_std: Standard deviation of t-domain Acc data for gravity signal Mag
+
 tBodyAccJerkMag_mean: Mean of t-domain Acc data for jerk signal Mag
+
 tBodyAccJerkMag_std: Standard deviation of t-domain Acc data for jerk signal Mag
+
 tBodyGyroMag_mean: Mean of t-domain Gyro data for body signal Mag
+
+
 tBodyGyroMag_std: Standard deviation of t-domain Gyro data for body signal Mag
+
 tBodyGyroJerkMag_mean: Mean of t-domain Gyro data for jerk signal Mag
+
 tBodyGyroJerkMag_std: Standard deviation of t-domain Gyro data for jerk signal Mag
+
 fBodyAcc_mean_X: Mean of f-domain Acc data for body signal in X direction
+
 fBodyAcc_mean_Y: Mean of f-domain Acc data for body signal in Y direction
+
 fBodyAcc_mean_Z: Mean of f-domain Acc data for body signal in Z direction
+
 fBodyAcc_std_X: Standard deviation of f-domain Acc data for body signal in X direction
+
 fBodyAcc_std_Y: Standard deviation of f-domain Acc data for body signal in Y direction
+
 fBodyAcc_std_Z: Standard deviation of f-domain Acc data for body signal in Z direction
+
 fBodyAcc_meanFreq_X: Mean frequency of f-domain Acc data for body signal in X direction
+
 fBodyAcc_meanFreq_Y: Mean frequency of f-domain Acc data for body signal in Y direction
+
 fBodyAcc_meanFreq_Z: Mean frequency of f-domain Acc data for body signal in Z direction
+
 fBodyAccJerk_mean_X: Mean of f-domain Acc data for jerk signal in X direction
+
 fBodyAccJerk_mean_Y: Mean of f-domain Acc data for jerk signal in Y direction
+
 fBodyAccJerk_mean_Z: Mean of f-domain Acc data for jerk signal in Z direction
+
 fBodyAccJerk_std_X:  Standard deviation of f-domain Acc data for jerk signal in X direction
+
 fBodyAccJerk_std_Y: Standard deviation of f-domain Acc data for jerk signal in Y direction
+
 fBodyAccJerk_std_Z: Standard deviation of f-domain Acc data for jerk signal in Z direction
+
 fBodyAccJerk_meanFreq_X: Mean frequency of f-domain Acc data for jerk signal in X direction
+
 fBodyAccJerk_meanFreq_Y: Mean frequency of f-domain Acc data for jerk signal in y direction
+
 fBodyAccJerk_meanFreq_Z: Mean frequency of f-domain Acc data for jerk signal in Z direction
+
 fBodyGyro_mean_X: Mean of f-domain Gyro data for body signal in X direction
+
 fBodyGyro_mean_Y: Mean of f-domain Gyro data for body signal in Y direction 
+
 fBodyGyro_mean_Z: Mean of f-domain Gyro data for body signal in Z direction
+
 fBodyGyro_std_X: Standard deviation of f-domain Gyro data for body signal in X direction
+
 fBodyGyro_std_Y: Standard deviation of f-domain Gyro data for body signal in Y direction
+
 fBodyGyro_std_Z: Standard deviation of f-domain Gyro data for body signal in Z direction
+
 fBodyGyro_meanFreq_X: Mean frequency of f-domain Gyro data for body signal in X direction
+
 fBodyGyro_meanFreq_Y: Mean frequency of f-domain Gyro data for body signal in Y direction
+
 fBodyGyro_meanFreq_Z: Mean frequency of f-domain Gyro data for body signal in Z direction
+
 fBodyAccMag_mean: Mean of f-domain Acc data for body signal Mag
+
 fBodyAccMag_std: Standard deviation of f-domain Acc data for body signal Mag
+
 fBodyAccMag_meanFreq: Mean frequency of f-domain Acc data for body signal Mag
+
 fBodyAccJerkMag_mean: Mean of f-domain Acc data for jerk signal Mag
+
 fBodyAccJerkMag_std: Standard deviation of f-domain Acc data for jerk signal Mag
+
 fBodyAccJerkMag_meanFreq: Mean frequency of f-domain Acc data for jerk signal Mag
+
 fBodyGyroMag_mean: Mean of f-domain Gyro data for body signal Mag
+
 fBodyGyroMag_std: Standard deviation of f-domain Gyro data for body signal Mag
+
 fBodyGyroMag_meanFreq: Mean frequency of f-domain Gyro data for body signal Mag
+
 fBodyGyroJerkMag_mean: Mean of f-domain Gyro data for jerk signal Mag
+
 fBodyGyroJerkMag_std: Standard deviation of f-domain Gyro data for jerk signal Mag
+
 fBodyGyroJerkMag_meanFreq: Mean frequency of f-domain Gyro data for jerk signal Mag
